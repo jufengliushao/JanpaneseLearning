@@ -43,6 +43,7 @@
 		840CF5A521F899560036E0C2 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF5A421F899560036E0C2 /* TopView.m */; };
 		840CF5A721F8995F0036E0C2 /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5A621F8995F0036E0C2 /* TopView.xib */; };
 		840CF5AB21F89BF10036E0C2 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5AA21F89BF00036E0C2 /* back.png */; };
+		8427A64221F8BAE800A90DCF /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8427A64121F8BAE800A90DCF /* Language.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		840CF5A421F899560036E0C2 /* TopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		840CF5A621F8995F0036E0C2 /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
 		840CF5AA21F89BF00036E0C2 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		8427A64121F8BAE800A90DCF /* Language.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 		840CF5A821F89BF00036E0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8427A64021F8BABF00A90DCF /* files */,
 				840CF5A921F89BF00036E0C2 /* imgs */,
 			);
 			path = Resources;
@@ -468,6 +471,14 @@
 				840CF5AA21F89BF00036E0C2 /* back.png */,
 			);
 			path = imgs;
+			sourceTree = "<group>";
+		};
+		8427A64021F8BABF00A90DCF /* files */ = {
+			isa = PBXGroup;
+			children = (
+				8427A64121F8BAE800A90DCF /* Language.plist */,
+			);
+			path = files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +592,7 @@
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
 				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
 				840CF51221F88AE40036E0C2 /* Main.storyboard in Resources */,
+				8427A64221F8BAE800A90DCF /* Language.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
