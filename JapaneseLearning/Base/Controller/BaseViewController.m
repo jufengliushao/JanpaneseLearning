@@ -7,8 +7,10 @@
 //
 
 #import "BaseViewController.h"
-
-@interface BaseViewController ()
+#import "MBProgressHUD.h"
+@interface BaseViewController (){
+     MBProgressHUD *hud;
+}
 
 @end
 
@@ -18,6 +20,13 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view.
+}
+
+- (void)showText:(NSString *)text delay:(CGFloat)time{
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = NSLocalizedString(text, @"null");
+    [hud hideAnimated:YES afterDelay:time];
 }
 
 /*

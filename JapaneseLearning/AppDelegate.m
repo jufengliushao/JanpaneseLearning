@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self iq_setting];
     return YES;
 }
 
@@ -47,5 +48,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+- (void)iq_setting{
+    [IQKeyboardManager sharedManager].enable = true;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = true;
+}
 @end

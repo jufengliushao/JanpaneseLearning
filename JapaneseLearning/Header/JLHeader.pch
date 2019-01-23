@@ -1,0 +1,22 @@
+//
+//  JLHeader.pch
+//  JapaneseLearning
+//
+//  Created by shaofeng liu on 2019/1/23.
+//  Copyright © 2019年 shaofeng liu. All rights reserved.
+//
+
+#ifndef JLHeader_pch
+#define JLHeader_pch
+
+#import "PropertySetting.h" // 基本属性
+
+#import "SFFileManager.h" // 文件读写
+
+// category
+#import "UIButton+SFButton.h"
+#import "UIView+SFView.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* JLHeader_pch */
