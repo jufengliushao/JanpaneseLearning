@@ -1,5 +1,5 @@
 //
-//  MainUIView.h
+//  FIftyMainViewController.h
 //  JapaneseLearning
 //
 //  Created by shaofeng liu on 2019/1/23.
@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseView.h"
+#import "BaseViewController.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainUIView : BaseView
-@property (weak, nonatomic) IBOutlet UIButton *fiftyBtn;
-+ (MainUIView *)initForNib;
+@interface FIftyMainViewController : BaseViewController
+
 @end
 
 NS_ASSUME_NONNULL_END

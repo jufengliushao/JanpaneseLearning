@@ -1,29 +1,18 @@
 //
-//  MainUIView.m
+//  BaseView.m
 //  JapaneseLearning
 //
 //  Created by shaofeng liu on 2019/1/23.
 //  Copyright © 2019年 shaofeng liu. All rights reserved.
 //
 
-#import "MainUIView.h"
+#import "BaseView.h"
 
-@interface MainUIView()
-
-@end
-
-@implementation MainUIView
-+ (MainUIView *)initForNib{
-    return [self initForNib:@"MainUIView"];
+@implementation BaseView
++ (instancetype)initForNib:(NSString *)name{
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil];
+    return views.firstObject;
 }
-
-- (void)awakeFromNib{
-    [super awakeFromNib];
-    self.fiftyBtn.layer.cornerRadius = 5;
-    self.fiftyBtn.layer.masksToBounds = true;
-}
-
-
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

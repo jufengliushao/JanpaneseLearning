@@ -37,6 +37,12 @@
 		840CF59021F891480036E0C2 /* UIButton+SFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF58F21F891480036E0C2 /* UIButton+SFButton.m */; };
 		840CF59321F891740036E0C2 /* UIView+SFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF59221F891740036E0C2 /* UIView+SFView.m */; };
 		840CF59A21F892640036E0C2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF59921F892640036E0C2 /* MainViewController.m */; };
+		840CF59D21F8958D0036E0C2 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF59C21F8958D0036E0C2 /* BaseView.m */; };
+		840CF5A121F8988C0036E0C2 /* FIftyMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF59F21F8988C0036E0C2 /* FIftyMainViewController.m */; };
+		840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5A021F8988C0036E0C2 /* FIftyMainViewController.xib */; };
+		840CF5A521F899560036E0C2 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CF5A421F899560036E0C2 /* TopView.m */; };
+		840CF5A721F8995F0036E0C2 /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5A621F8995F0036E0C2 /* TopView.xib */; };
+		840CF5AB21F89BF10036E0C2 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5AA21F89BF00036E0C2 /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +125,15 @@
 		840CF59221F891740036E0C2 /* UIView+SFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFView.m"; sourceTree = "<group>"; };
 		840CF59821F892640036E0C2 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		840CF59921F892640036E0C2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		840CF59B21F8958D0036E0C2 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		840CF59C21F8958D0036E0C2 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		840CF59E21F8988C0036E0C2 /* FIftyMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FIftyMainViewController.h; sourceTree = "<group>"; };
+		840CF59F21F8988C0036E0C2 /* FIftyMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FIftyMainViewController.m; sourceTree = "<group>"; };
+		840CF5A021F8988C0036E0C2 /* FIftyMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FIftyMainViewController.xib; sourceTree = "<group>"; };
+		840CF5A321F899560036E0C2 /* TopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		840CF5A421F899560036E0C2 /* TopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		840CF5A621F8995F0036E0C2 /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
+		840CF5AA21F89BF00036E0C2 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +189,7 @@
 				840CF50D21F88AE40036E0C2 /* ViewController.h */,
 				840CF50E21F88AE40036E0C2 /* ViewController.m */,
 				840CF51021F88AE40036E0C2 /* Main.storyboard */,
+				840CF5A821F89BF00036E0C2 /* Resources */,
 				840CF59421F8924E0036E0C2 /* Main */,
 				840CF55521F88E890036E0C2 /* Header */,
 				840CF55021F88D3E0036E0C2 /* Third */,
@@ -234,6 +250,8 @@
 		840CF53F21F88B8D0036E0C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				840CF59B21F8958D0036E0C2 /* BaseView.h */,
+				840CF59C21F8958D0036E0C2 /* BaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +269,9 @@
 		840CF54121F88B8D0036E0C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				840CF59E21F8988C0036E0C2 /* FIftyMainViewController.h */,
+				840CF59F21F8988C0036E0C2 /* FIftyMainViewController.m */,
+				840CF5A021F8988C0036E0C2 /* FIftyMainViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -426,8 +447,27 @@
 				840CF54B21F88D020036E0C2 /* MainUIView.h */,
 				840CF54C21F88D020036E0C2 /* MainUIView.m */,
 				840CF54E21F88D0D0036E0C2 /* MainUIView.xib */,
+				840CF5A321F899560036E0C2 /* TopView.h */,
+				840CF5A421F899560036E0C2 /* TopView.m */,
+				840CF5A621F8995F0036E0C2 /* TopView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		840CF5A821F89BF00036E0C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				840CF5A921F89BF00036E0C2 /* imgs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		840CF5A921F89BF00036E0C2 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				840CF5AA21F89BF00036E0C2 /* back.png */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,10 +573,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CF5A721F8995F0036E0C2 /* TopView.xib in Resources */,
 				840CF58521F891080036E0C2 /* IQKeyboardManager.bundle in Resources */,
 				840CF51721F88AE70036E0C2 /* LaunchScreen.storyboard in Resources */,
 				840CF54F21F88D0D0036E0C2 /* MainUIView.xib in Resources */,
+				840CF5AB21F89BF10036E0C2 /* back.png in Resources */,
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
+				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
 				840CF51221F88AE40036E0C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,11 +611,14 @@
 				840CF54D21F88D020036E0C2 /* MainUIView.m in Sources */,
 				840CF58321F891080036E0C2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				840CF58021F891080036E0C2 /* IQToolbar.m in Sources */,
+				840CF5A121F8988C0036E0C2 /* FIftyMainViewController.m in Sources */,
 				840CF58121F891080036E0C2 /* IQTitleBarButtonItem.m in Sources */,
+				840CF5A521F899560036E0C2 /* TopView.m in Sources */,
 				840CF58D21F891080036E0C2 /* MBProgressHUD.m in Sources */,
 				840CF59321F891740036E0C2 /* UIView+SFView.m in Sources */,
 				840CF51A21F88AE70036E0C2 /* main.m in Sources */,
 				840CF58221F891080036E0C2 /* IQBarButtonItem.m in Sources */,
+				840CF59D21F8958D0036E0C2 /* BaseView.m in Sources */,
 				840CF59A21F892640036E0C2 /* MainViewController.m in Sources */,
 				840CF58421F891080036E0C2 /* IQPreviousNextView.m in Sources */,
 				840CF58821F891080036E0C2 /* IQUITextFieldView+Additions.m in Sources */,

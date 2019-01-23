@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define BS(blockSelf)  __block __typeof(&*self)blockSelf = self;
 
 typedef void(^ActionBlock)(UIButton *sender);
 

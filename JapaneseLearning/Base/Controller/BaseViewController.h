@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : ViewController
 - (void)showText:(NSString *)text delay:(CGFloat)time;
+
+- (void)top_hiddeBack:(BOOL)isHidden;
+- (void)top_setTitle:(NSString *)title;
+- (void)top_backAction;
+- (void)top_resetFrame;
 @end
 
 NS_ASSUME_NONNULL_END
