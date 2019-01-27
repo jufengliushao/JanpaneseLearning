@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "FiftyModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ReaderManager : NSObject
++ (instancetype)shareInstance;
+
+@property (nonatomic, strong, readonly) NSArray *fiftiesArr; // 50 音图数据
 
 @end
 

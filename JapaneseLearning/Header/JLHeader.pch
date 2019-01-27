@@ -13,6 +13,9 @@
 
 #import "SFFileManager.h" // 文件读写
 
+
+#import "ReaderManager.h" // 资源文件读写
+
 // category
 #import "UIButton+SFButton.h"
 #import "UIView+SFView.h"

@@ -49,6 +49,16 @@
 		8464756E21FD780500A305C3 /* FiftyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464756C21FD780500A305C3 /* FiftyStudyViewController.m */; };
 		8464756F21FD780500A305C3 /* FiftyStudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464756D21FD780500A305C3 /* FiftyStudyViewController.xib */; };
 		8464757221FD798A00A305C3 /* ReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757121FD798A00A305C3 /* ReaderManager.m */; };
+		8464758A21FD7D9700A305C3 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757521FD7D9700A305C3 /* JSONValueTransformer.m */; };
+		8464758B21FD7D9700A305C3 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757821FD7D9700A305C3 /* JSONKeyMapper.m */; };
+		8464758C21FD7D9700A305C3 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757A21FD7D9700A305C3 /* JSONModel.m */; };
+		8464758D21FD7D9700A305C3 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757B21FD7D9700A305C3 /* JSONModelError.m */; };
+		8464758E21FD7D9700A305C3 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464757E21FD7D9700A305C3 /* JSONModelClassProperty.m */; };
+		8464758F21FD7D9700A305C3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8464758121FD7D9700A305C3 /* Info.plist */; };
+		8464759021FD7D9700A305C3 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464758421FD7D9700A305C3 /* JSONHTTPClient.m */; };
+		8464759121FD7D9700A305C3 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464758521FD7D9700A305C3 /* JSONAPI.m */; };
+		8464759221FD7D9700A305C3 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464758921FD7D9700A305C3 /* JSONModel+networking.m */; };
+		8464759521FD7DB900A305C3 /* FiftyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8464759421FD7DB900A305C3 /* FiftyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +159,27 @@
 		8464756D21FD780500A305C3 /* FiftyStudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyStudyViewController.xib; sourceTree = "<group>"; };
 		8464757021FD798A00A305C3 /* ReaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderManager.h; sourceTree = "<group>"; };
 		8464757121FD798A00A305C3 /* ReaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderManager.m; sourceTree = "<group>"; };
+		8464757521FD7D9700A305C3 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		8464757621FD7D9700A305C3 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		8464757721FD7D9700A305C3 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		8464757821FD7D9700A305C3 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		8464757A21FD7D9700A305C3 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		8464757B21FD7D9700A305C3 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		8464757C21FD7D9700A305C3 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		8464757D21FD7D9700A305C3 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		8464757E21FD7D9700A305C3 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		8464757F21FD7D9700A305C3 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		8464758021FD7D9700A305C3 /* JSONModel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		8464758121FD7D9700A305C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8464758221FD7D9700A305C3 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		8464758421FD7D9700A305C3 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		8464758521FD7D9700A305C3 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		8464758621FD7D9700A305C3 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		8464758721FD7D9700A305C3 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		8464758821FD7D9700A305C3 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		8464758921FD7D9700A305C3 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		8464759321FD7DB900A305C3 /* FiftyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyModel.h; sourceTree = "<group>"; };
+		8464759421FD7DB900A305C3 /* FiftyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +330,8 @@
 		840CF54221F88B8D0036E0C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8464759321FD7DB900A305C3 /* FiftyModel.h */,
+				8464759421FD7DB900A305C3 /* FiftyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +349,7 @@
 		840CF55021F88D3E0036E0C2 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				8464757321FD7D9700A305C3 /* JSONModel */,
 				840CF57C21F891070036E0C2 /* HUD */,
 				840CF55821F891070036E0C2 /* IQKeyboardManager */,
 				840CF57B21F891070036E0C2 /* SFCategory */,
@@ -502,6 +536,56 @@
 			path = files;
 			sourceTree = "<group>";
 		};
+		8464757321FD7D9700A305C3 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				8464757421FD7D9700A305C3 /* JSONModelTransformations */,
+				8464757921FD7D9700A305C3 /* JSONModel */,
+				8464758021FD7D9700A305C3 /* JSONModel.modulemap */,
+				8464758121FD7D9700A305C3 /* Info.plist */,
+				8464758221FD7D9700A305C3 /* JSONModelLib.h */,
+				8464758321FD7D9700A305C3 /* JSONModelNetworking */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		8464757421FD7D9700A305C3 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				8464757521FD7D9700A305C3 /* JSONValueTransformer.m */,
+				8464757621FD7D9700A305C3 /* JSONKeyMapper.h */,
+				8464757721FD7D9700A305C3 /* JSONValueTransformer.h */,
+				8464757821FD7D9700A305C3 /* JSONKeyMapper.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		8464757921FD7D9700A305C3 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				8464757A21FD7D9700A305C3 /* JSONModel.m */,
+				8464757B21FD7D9700A305C3 /* JSONModelError.m */,
+				8464757C21FD7D9700A305C3 /* JSONModelClassProperty.h */,
+				8464757D21FD7D9700A305C3 /* JSONModel.h */,
+				8464757E21FD7D9700A305C3 /* JSONModelClassProperty.m */,
+				8464757F21FD7D9700A305C3 /* JSONModelError.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		8464758321FD7D9700A305C3 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8464758421FD7D9700A305C3 /* JSONHTTPClient.m */,
+				8464758521FD7D9700A305C3 /* JSONAPI.m */,
+				8464758621FD7D9700A305C3 /* JSONModel+networking.h */,
+				8464758721FD7D9700A305C3 /* JSONHTTPClient.h */,
+				8464758821FD7D9700A305C3 /* JSONAPI.h */,
+				8464758921FD7D9700A305C3 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +697,7 @@
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
 				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
 				840CF51221F88AE40036E0C2 /* Main.storyboard in Resources */,
+				8464758F21FD7D9700A305C3 /* Info.plist in Resources */,
 				8427A64721F96D2B00A90DCF /* FiftyMainView.xib in Resources */,
 				8464756F21FD780500A305C3 /* FiftyStudyViewController.xib in Resources */,
 				8427A64221F8BAE800A90DCF /* Language.plist in Resources */,
@@ -640,22 +725,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8464759021FD7D9700A305C3 /* JSONHTTPClient.m in Sources */,
 				840CF50F21F88AE40036E0C2 /* ViewController.m in Sources */,
 				840CF58921F891080036E0C2 /* IQUIScrollView+Additions.m in Sources */,
 				840CF54621F88BA20036E0C2 /* BaseViewController.m in Sources */,
+				8464758B21FD7D9700A305C3 /* JSONKeyMapper.m in Sources */,
 				840CF54D21F88D020036E0C2 /* MainUIView.m in Sources */,
 				840CF58321F891080036E0C2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				840CF58021F891080036E0C2 /* IQToolbar.m in Sources */,
 				840CF5A121F8988C0036E0C2 /* FIftyMainViewController.m in Sources */,
 				840CF58121F891080036E0C2 /* IQTitleBarButtonItem.m in Sources */,
+				8464758E21FD7D9700A305C3 /* JSONModelClassProperty.m in Sources */,
 				840CF5A521F899560036E0C2 /* TopView.m in Sources */,
 				840CF58D21F891080036E0C2 /* MBProgressHUD.m in Sources */,
 				840CF59321F891740036E0C2 /* UIView+SFView.m in Sources */,
 				8464756E21FD780500A305C3 /* FiftyStudyViewController.m in Sources */,
 				840CF51A21F88AE70036E0C2 /* main.m in Sources */,
+				8464759521FD7DB900A305C3 /* FiftyModel.m in Sources */,
 				840CF58221F891080036E0C2 /* IQBarButtonItem.m in Sources */,
 				8464757221FD798A00A305C3 /* ReaderManager.m in Sources */,
 				840CF59D21F8958D0036E0C2 /* BaseView.m in Sources */,
+				8464758C21FD7D9700A305C3 /* JSONModel.m in Sources */,
+				8464759121FD7D9700A305C3 /* JSONAPI.m in Sources */,
 				840CF59A21F892640036E0C2 /* MainViewController.m in Sources */,
 				840CF58421F891080036E0C2 /* IQPreviousNextView.m in Sources */,
 				840CF58821F891080036E0C2 /* IQUITextFieldView+Additions.m in Sources */,
@@ -663,7 +754,10 @@
 				840CF58A21F891080036E0C2 /* IQUIView+Hierarchy.m in Sources */,
 				8427A64521F96D2000A90DCF /* FiftyMainView.m in Sources */,
 				840CF58721F891080036E0C2 /* IQNSArray+Sort.m in Sources */,
+				8464758A21FD7D9700A305C3 /* JSONValueTransformer.m in Sources */,
 				840CF58621F891080036E0C2 /* IQKeyboardManager.m in Sources */,
+				8464759221FD7D9700A305C3 /* JSONModel+networking.m in Sources */,
+				8464758D21FD7D9700A305C3 /* JSONModelError.m in Sources */,
 				840CF59021F891480036E0C2 /* UIButton+SFButton.m in Sources */,
 				840CF50C21F88AE40036E0C2 /* AppDelegate.m in Sources */,
 				840CF58B21F891080036E0C2 /* IQUIViewController+Additions.m in Sources */,
