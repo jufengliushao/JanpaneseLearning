@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FiftyMainView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoa-fA-GNK">
+                    <rect key="frame" x="43" y="160" width="289" height="46.5"/>
+                    <color key="backgroundColor" red="0.20381457820000001" green="0.6302758812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Yoa-fA-GNK" secondAttribute="height" multiplier="31:5" id="Ewh-jW-V1O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="学习">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGt-1w-UCL">
+                    <rect key="frame" x="43" y="270" width="289" height="47"/>
+                    <color key="backgroundColor" red="0.20381457820000001" green="0.6302758812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JGt-1w-UCL" secondAttribute="height" multiplier="31:5" id="Mqc-oI-ue7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="自测">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JGt-1w-UCL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.88" id="2zf-Je-Pbe"/>
+                <constraint firstItem="JGt-1w-UCL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hur-Us-eiU"/>
+                <constraint firstItem="JGt-1w-UCL" firstAttribute="width" secondItem="Yoa-fA-GNK" secondAttribute="width" id="ibt-br-TP9"/>
+                <constraint firstItem="Yoa-fA-GNK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="odd-eW-pHa"/>
+                <constraint firstItem="Yoa-fA-GNK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.77" id="ogB-UX-mpz"/>
+                <constraint firstItem="Yoa-fA-GNK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sIe-ig-AoZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="showBtn" destination="Yoa-fA-GNK" id="TtV-nK-447"/>
+                <outlet property="testBtn" destination="JGt-1w-UCL" id="Rf1-s1-fS9"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="152"/>
+        </view>
+    </objects>
+</document>
