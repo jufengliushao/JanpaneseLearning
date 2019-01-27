@@ -12,7 +12,7 @@
 #import "PropertySetting.h" // 基本属性
 
 #import "SFFileManager.h" // 文件读写
-
+#import "Masonry.h"
 
 #import "ReaderManager.h" // 资源文件读写
 

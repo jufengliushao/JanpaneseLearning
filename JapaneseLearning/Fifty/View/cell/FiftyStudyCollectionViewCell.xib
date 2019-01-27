@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FiftyStudyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-3e-uBx">
+                        <rect key="frame" x="106" y="100.5" width="134.5" height="69.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-gN-aH3">
+                        <rect key="frame" x="129.5" y="30.5" width="87" height="44.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxJ-vY-0sH">
+                        <rect key="frame" x="106" y="190.5" width="134.5" height="69.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yxJ-vY-0sH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.5" id="9zC-f8-aEJ"/>
+                <constraint firstItem="Mci-3e-uBx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.9" id="Qdi-pO-dB5"/>
+                <constraint firstItem="Qq0-gN-aH3" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.35" id="UX2-ph-15f"/>
+                <constraint firstItem="Qq0-gN-aH3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ecP-Wm-VIT"/>
+                <constraint firstItem="yxJ-vY-0sH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gT3-UB-WJ5"/>
+                <constraint firstItem="Mci-3e-uBx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sXM-15-8d5"/>
+            </constraints>
+            <size key="customSize" width="346" height="300"/>
+            <connections>
+                <outlet property="pianLabel" destination="Mci-3e-uBx" id="dEl-tY-Nu4"/>
+                <outlet property="pingLabel" destination="yxJ-vY-0sH" id="zj1-2Q-s22"/>
+                <outlet property="romaLabel" destination="Qq0-gN-aH3" id="H4l-Jg-lSu"/>
+            </connections>
+            <point key="canvasLocation" x="51.200000000000003" y="98.050974512743636"/>
+        </collectionViewCell>
+    </objects>
+</document>

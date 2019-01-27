@@ -13,4 +13,5 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define NAV_BAR_HEIGHT 64
+#define MAIN_VIEW_HEIGHT SCREEN_HEIGHT - NAV_BAR_HEIGHT
 #endif /* PropertySetting_h */
