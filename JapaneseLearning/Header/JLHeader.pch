@@ -13,6 +13,7 @@
 
 #import "SFFileManager.h" // 文件读写
 #import "Masonry.h"
+#import "EnumHeader.h"
 
 #import "ReaderManager.h" // 资源文件读写
 

@@ -9,6 +9,7 @@
 #import "FIftyMainViewController.h"
 #import "FiftyMainView.h"
 #import "FiftyStudyViewController.h"
+#import "FiftyTestViewController.h"
 @interface FIftyMainViewController ()
 @property (nonatomic, strong) FiftyMainView *mainView;
 @end
@@ -43,7 +44,7 @@
     }];
     // 测试
     [self.mainView.testBtn addTargetAction:^(UIButton *sender) {
-        
+        [ws skip_test];
     }];
 }
 
@@ -52,6 +53,13 @@
     FiftyStudyViewController *vc = [[FiftyStudyViewController alloc]
                                                                                                initWithNibName:@"FiftyStudyViewController"
                                                                                                                 bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:vc animated:true];
+}
+
+- (void)skip_test{
+    FiftyTestViewController *vc = [[FiftyTestViewController alloc]
+                                                                initWithNibName:@"FiftyTestViewController"
+                                                                                bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:vc animated:true];
 }
 
