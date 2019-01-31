@@ -8,7 +8,7 @@
 
 #import "FiftyTestViewController.h"
 #import "FiftyTestMainView.h"
-@interface FiftyTestViewController ()
+@interface FiftyTestViewController ()<TestProtocolDelegate>
 @property (nonatomic, strong) FiftyTestMainView *mainView;
 @end
 
@@ -26,6 +26,7 @@
     [self top_hiddeBack:NO];
     [self top_setTitle:@"50音图自测"];
     [self.view addSubview:self.mainView];
+    self.mainView.delegate = self;
     [self dataSetting];
 }
 
@@ -40,6 +41,19 @@
         [datas addObject:[[QuestDataManager shareInstance] questData_getDataWithType:[types[i] integerValue]]];
     }
     [self.mainView configureDatas:datas types:types];
+}
+
+#pragma mark - TestProtocolDelegate
+- (void)testDelegate_testComplete{
+    [self showText:@"太棒了，题目全部做完了哟~" delay:1.0];
+}
+
+- (void)testDelegate_testRight{
+    [self showText:@"回答正确~" delay:1.0];
+}
+
+- (void)testDelegate_testWrong{
+    [self showText:@"答案错误~" delay:1.0];
 }
 
 #pragma mark - 懒加载

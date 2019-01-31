@@ -33,7 +33,6 @@
         // 平假名
         [self setDataPian];
     }
-    [self buttonAction];
 }
 
 - (void)resetBtnTag{
@@ -57,10 +56,6 @@
     int value = arc4random() % 2;
     self.targetLabel.text = value == 0  ? _rightData.roma : _rightData.ping;
     self.markLabel.text = QUESTION_MSG_PIAN_TM;
-}
-
-- (void)buttonAction{
-    
 }
 
 @end

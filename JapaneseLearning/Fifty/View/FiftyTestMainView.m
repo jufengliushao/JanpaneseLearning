@@ -11,6 +11,7 @@
 @interface FiftyTestMainView()<UICollectionViewDelegate, UICollectionViewDataSource>{
     NSArray *_datas;
     NSArray *_types;
+    NSInteger _currentItem;
 }
 @end
 
@@ -22,6 +23,7 @@
 - (void)awakeFromNib{
     [super awakeFromNib];
     self.mainCV.delegate = self;
+    _currentItem = 0;
     self.mainCV.dataSource = self;
     self.mainCV.backgroundColor = [UIColor whiteColor];
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
@@ -49,6 +51,29 @@
     [self.mainCV reloadData];
 }
 
+- (void)buttonAction:(NSUInteger)tag{
+    if (tag == RIGHT_ANSWER_TAG) {
+        // right
+        _currentItem ++;
+        if (_currentItem >= _datas.count) {
+            // complete
+            if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testComplete)]) {
+                [self.delegate testDelegate_testComplete];
+            }
+            return;
+        }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testRight)]) {
+            [self.delegate testDelegate_testRight];
+        }
+        NSIndexPath *indexP = [NSIndexPath indexPathForRow:_currentItem inSection:0];
+        [self.mainCV scrollToItemAtIndexPath:indexP atScrollPosition:(UICollectionViewScrollPositionRight) animated:true];
+    }else{
+        // wrong
+        if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testWrong)]) {
+            [self.delegate testDelegate_testWrong];
+        }
+    }
+}
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
@@ -63,6 +88,19 @@
                                     dequeueReusableCellWithReuseIdentifier:FiftyTestPianBtnCollectionViewCellID
                                           forIndexPath:indexPath];
     [cell configureModel:_datas[indexPath.item] type:[_types[indexPath.item] integerValue]];
+    WS(ws);
+    [cell.firstBtn addTargetAction:^(UIButton *sender) {
+        [ws buttonAction:sender.tag];
+    }];
+    [cell.secondBtn addTargetAction:^(UIButton *sender) {
+        [ws buttonAction:sender.tag];
+    }];
+    [cell.thirdBtn addTargetAction:^(UIButton *sender) {
+        [ws buttonAction:sender.tag];
+    }];
+    [cell.forthBtn addTargetAction:^(UIButton *sender) {
+        [ws buttonAction:sender.tag];
+    }];
     return cell;
 }
 
