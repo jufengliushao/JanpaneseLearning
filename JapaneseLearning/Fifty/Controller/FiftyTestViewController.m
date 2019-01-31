@@ -7,9 +7,9 @@
 //
 
 #import "FiftyTestViewController.h"
-
+#import "FiftyTestMainView.h"
 @interface FiftyTestViewController ()
-
+@property (nonatomic, strong) FiftyTestMainView *mainView;
 @end
 
 @implementation FiftyTestViewController
@@ -25,12 +25,31 @@
 - (void)viewSetting{
     [self top_hiddeBack:NO];
     [self top_setTitle:@"50音图自测"];
+    [self.view addSubview:self.mainView];
+    [self dataSetting];
 }
 
 - (void)top_backAction{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)dataSetting{
+    NSArray *types = @[@(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM)];
+    NSMutableArray *datas = [NSMutableArray arrayWithCapacity:0];
+    for (NSInteger i = 0; i < types.count; i ++) {
+        [datas addObject:[[QuestDataManager shareInstance] questData_getDataWithType:[types[i] integerValue]]];
+    }
+    [self.mainView configureDatas:datas types:types];
+}
+
+#pragma mark - 懒加载
+- (FiftyTestMainView *)mainView{
+    if (!_mainView) {
+        _mainView = [FiftyTestMainView initForNib];
+        _mainView.frame = CGRectMake(0, NAV_BAR_HEIGHT, SCREEN_WIDTH, MAIN_VIEW_HEIGHT);
+    }
+    return _mainView;
+}
 /*
 #pragma mark - Navigation
 

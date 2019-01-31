@@ -28,8 +28,12 @@
     _rightData = data[RIGHT_DATA_KEY];
     [self resetBtnTag];
     [self setRightTag];
-   
-    
+    [self setDataPian];
+    if (type == QUESTIONTYPE_PIAN_RANDOM) {
+        // 平假名
+        [self setDataPian];
+    }
+    [self buttonAction];
 }
 
 - (void)resetBtnTag{
@@ -42,6 +46,21 @@
     NSUInteger idex = [_questData indexOfObject:_rightData];
     UIButton *btn = idex >= _btnArr.count ? _btnArr.firstObject : _btnArr[idex];
     btn.tag = RIGHT_ANSWER_TAG;
+}
+
+- (void)setDataPian{
+    for (NSInteger i = 0; i < _questData.count; i ++) {
+        UIButton *btn = _btnArr[i];
+        FiftyModel *model = _questData[i];
+        [btn setTitle:model.pian  forState:(UIControlStateNormal)];
+    }
+    int value = arc4random() % 2;
+    self.targetLabel.text = value == 0  ? _rightData.roma : _rightData.ping;
+    self.markLabel.text = QUESTION_MSG_PIAN_TM;
+}
+
+- (void)buttonAction{
+    
 }
 
 @end

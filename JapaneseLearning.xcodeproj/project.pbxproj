@@ -48,6 +48,8 @@
 		841D36692201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D36672201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m */; };
 		841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */; };
 		841D366D22028E570055079E /* QuestDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D366C22028E570055079E /* QuestDataManager.m */; };
+		841D3671220295050055079E /* FiftyTestMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D3670220295050055079E /* FiftyTestMainView.m */; };
+		841D3673220295210055079E /* FiftyTestMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D3672220295210055079E /* FiftyTestMainView.xib */; };
 		8427A64221F8BAE800A90DCF /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8427A64121F8BAE800A90DCF /* Language.plist */; };
 		8427A64521F96D2000A90DCF /* FiftyMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427A64421F96D2000A90DCF /* FiftyMainView.m */; };
 		8427A64721F96D2B00A90DCF /* FiftyMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427A64621F96D2B00A90DCF /* FiftyMainView.xib */; };
@@ -176,6 +178,10 @@
 		841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestPianBtnCollectionViewCell.xib; sourceTree = "<group>"; };
 		841D366B22028E570055079E /* QuestDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestDataManager.h; sourceTree = "<group>"; };
 		841D366C22028E570055079E /* QuestDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestDataManager.m; sourceTree = "<group>"; };
+		841D366E2202945A0055079E /* QuestionMsgHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionMsgHeader.h; sourceTree = "<group>"; };
+		841D366F220295050055079E /* FiftyTestMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyTestMainView.h; sourceTree = "<group>"; };
+		841D3670220295050055079E /* FiftyTestMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyTestMainView.m; sourceTree = "<group>"; };
+		841D3672220295210055079E /* FiftyTestMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestMainView.xib; sourceTree = "<group>"; };
 		8427A64121F8BAE800A90DCF /* Language.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = "<group>"; };
 		8427A64321F96D2000A90DCF /* FiftyMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyMainView.h; sourceTree = "<group>"; };
 		8427A64421F96D2000A90DCF /* FiftyMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyMainView.m; sourceTree = "<group>"; };
@@ -408,6 +414,9 @@
 				8464759921FD82F900A305C3 /* FiftyStudyMainView.h */,
 				8464759A21FD82F900A305C3 /* FiftyStudyMainView.m */,
 				8464759C21FD832900A305C3 /* FiftyStudyMainView.xib */,
+				841D366F220295050055079E /* FiftyTestMainView.h */,
+				841D3670220295050055079E /* FiftyTestMainView.m */,
+				841D3672220295210055079E /* FiftyTestMainView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,6 +449,7 @@
 				840CF55621F88EA00036E0C2 /* JLHeader.pch */,
 				840CF55721F88FCC0036E0C2 /* PropertySetting.h */,
 				84F1A4E62201CB7100639394 /* EnumHeader.h */,
+				841D366E2202945A0055079E /* QuestionMsgHeader.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -810,6 +820,7 @@
 				840CF5AB21F89BF10036E0C2 /* back.png in Resources */,
 				8464759D21FD832900A305C3 /* FiftyStudyMainView.xib in Resources */,
 				841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */,
+				841D3673220295210055079E /* FiftyTestMainView.xib in Resources */,
 				841D36652201D2200055079E /* FiftyTestViewController.xib in Resources */,
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
 				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
@@ -849,6 +860,7 @@
 				8464758B21FD7D9700A305C3 /* JSONKeyMapper.m in Sources */,
 				8464759B21FD82F900A305C3 /* FiftyStudyMainView.m in Sources */,
 				840CF54D21F88D020036E0C2 /* MainUIView.m in Sources */,
+				841D3671220295050055079E /* FiftyTestMainView.m in Sources */,
 				8435BD9221FD8DB500DD0BB9 /* MASLayoutConstraint.m in Sources */,
 				840CF58321F891080036E0C2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				840CF58021F891080036E0C2 /* IQToolbar.m in Sources */,

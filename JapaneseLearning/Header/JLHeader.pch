@@ -16,6 +16,7 @@
 
 #import "Masonry.h"
 #import "EnumHeader.h"
+#import "QuestionMsgHeader.h"
 
 #import "ReaderManager.h" // 资源文件读写
 

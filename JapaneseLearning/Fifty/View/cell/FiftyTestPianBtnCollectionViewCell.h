@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+static   NSString * FiftyTestPianBtnCollectionViewCellID = @"FiftyTestPianBtnCollectionViewCellID";
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FiftyTestPianBtnCollectionViewCell : UICollectionViewCell
