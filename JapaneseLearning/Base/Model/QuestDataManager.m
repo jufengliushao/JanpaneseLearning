@@ -46,6 +46,12 @@ QuestDataManager *questDataM = nil;
         }
             break;
             
+        case QUESTIONTYPE_PING_RANDOM:{
+            // 片假名数据
+            result = [self private_getPianQuestData];
+        }
+            break;
+            
         default:
             break;
     }

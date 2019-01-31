@@ -10,5 +10,6 @@
 #define QuestionMsgHeader_h
 
 #define QUESTION_MSG_PIAN_TM @"请选择正确的片假名"
+#define QUESTION_MSG_PING_TM @"请选择正确的平假名"
 
 #endif /* QuestionMsgHeader_h */

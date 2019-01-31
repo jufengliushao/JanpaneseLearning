@@ -32,6 +32,9 @@
     if (type == QUESTIONTYPE_PIAN_RANDOM) {
         // 平假名
         [self setDataPian];
+    }else{
+        // 平假名
+        [self setDataPing];
     }
 }
 
@@ -58,4 +61,14 @@
     self.markLabel.text = QUESTION_MSG_PIAN_TM;
 }
 
+- (void)setDataPing{
+    for (NSInteger i = 0; i < _questData.count; i ++) {
+        UIButton *btn = _btnArr[i];
+        FiftyModel *model = _questData[i];
+        [btn setTitle:model.ping  forState:(UIControlStateNormal)];
+    }
+    int value = arc4random() % 2;
+    self.targetLabel.text = value == 0  ? _rightData.roma : _rightData.pian;
+    self.markLabel.text = QUESTION_MSG_PING_TM;
+}
 @end

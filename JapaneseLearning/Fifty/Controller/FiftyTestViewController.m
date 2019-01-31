@@ -35,7 +35,11 @@
 }
 
 - (void)dataSetting{
-    NSArray *types = @[@(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM), @(QUESTIONTYPE_PIAN_RANDOM)];
+    NSMutableArray *types = [NSMutableArray arrayWithCapacity:0];
+    for (int i = 0; i < 100; i ++) {
+        int value = arc4random() % 2;
+        [types addObject:@(value)];
+    }
     NSMutableArray *datas = [NSMutableArray arrayWithCapacity:0];
     for (NSInteger i = 0; i < types.count; i ++) {
         [datas addObject:[[QuestDataManager shareInstance] questData_getDataWithType:[types[i] integerValue]]];
