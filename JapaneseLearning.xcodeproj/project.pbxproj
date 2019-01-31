@@ -45,6 +45,9 @@
 		840CF5AB21F89BF10036E0C2 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 840CF5AA21F89BF00036E0C2 /* back.png */; };
 		841D36642201D2200055079E /* FiftyTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D36622201D2200055079E /* FiftyTestViewController.m */; };
 		841D36652201D2200055079E /* FiftyTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D36632201D2200055079E /* FiftyTestViewController.xib */; };
+		841D36692201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D36672201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m */; };
+		841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */; };
+		841D366D22028E570055079E /* QuestDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 841D366C22028E570055079E /* QuestDataManager.m */; };
 		8427A64221F8BAE800A90DCF /* Language.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8427A64121F8BAE800A90DCF /* Language.plist */; };
 		8427A64521F96D2000A90DCF /* FiftyMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427A64421F96D2000A90DCF /* FiftyMainView.m */; };
 		8427A64721F96D2B00A90DCF /* FiftyMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427A64621F96D2B00A90DCF /* FiftyMainView.xib */; };
@@ -168,6 +171,11 @@
 		841D36612201D2200055079E /* FiftyTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyTestViewController.h; sourceTree = "<group>"; };
 		841D36622201D2200055079E /* FiftyTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyTestViewController.m; sourceTree = "<group>"; };
 		841D36632201D2200055079E /* FiftyTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestViewController.xib; sourceTree = "<group>"; };
+		841D36662201D3620055079E /* FiftyTestPianBtnCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyTestPianBtnCollectionViewCell.h; sourceTree = "<group>"; };
+		841D36672201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyTestPianBtnCollectionViewCell.m; sourceTree = "<group>"; };
+		841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestPianBtnCollectionViewCell.xib; sourceTree = "<group>"; };
+		841D366B22028E570055079E /* QuestDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestDataManager.h; sourceTree = "<group>"; };
+		841D366C22028E570055079E /* QuestDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestDataManager.m; sourceTree = "<group>"; };
 		8427A64121F8BAE800A90DCF /* Language.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Language.plist; sourceTree = "<group>"; };
 		8427A64321F96D2000A90DCF /* FiftyMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyMainView.h; sourceTree = "<group>"; };
 		8427A64421F96D2000A90DCF /* FiftyMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyMainView.m; sourceTree = "<group>"; };
@@ -340,6 +348,8 @@
 			children = (
 				8464757021FD798A00A305C3 /* ReaderManager.h */,
 				8464757121FD798A00A305C3 /* ReaderManager.m */,
+				841D366B22028E570055079E /* QuestDataManager.h */,
+				841D366C22028E570055079E /* QuestDataManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -682,6 +692,9 @@
 				8464759F21FD84CA00A305C3 /* FiftyStudyCollectionViewCell.h */,
 				846475A021FD84CA00A305C3 /* FiftyStudyCollectionViewCell.m */,
 				846475A121FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib */,
+				841D36662201D3620055079E /* FiftyTestPianBtnCollectionViewCell.h */,
+				841D36672201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m */,
+				841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -796,6 +809,7 @@
 				846475A321FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib in Resources */,
 				840CF5AB21F89BF10036E0C2 /* back.png in Resources */,
 				8464759D21FD832900A305C3 /* FiftyStudyMainView.xib in Resources */,
+				841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */,
 				841D36652201D2200055079E /* FiftyTestViewController.xib in Resources */,
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
 				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
@@ -843,6 +857,7 @@
 				840CF5A121F8988C0036E0C2 /* FIftyMainViewController.m in Sources */,
 				840CF58121F891080036E0C2 /* IQTitleBarButtonItem.m in Sources */,
 				846475A221FD84CA00A305C3 /* FiftyStudyCollectionViewCell.m in Sources */,
+				841D36692201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m in Sources */,
 				8435BD9021FD8DB500DD0BB9 /* MASCompositeConstraint.m in Sources */,
 				8464758E21FD7D9700A305C3 /* JSONModelClassProperty.m in Sources */,
 				840CF5A521F899560036E0C2 /* TopView.m in Sources */,
@@ -863,6 +878,7 @@
 				840CF55421F88E630036E0C2 /* SFFileManager.m in Sources */,
 				8435BD9521FD8DB500DD0BB9 /* MASConstraint.m in Sources */,
 				840CF58A21F891080036E0C2 /* IQUIView+Hierarchy.m in Sources */,
+				841D366D22028E570055079E /* QuestDataManager.m in Sources */,
 				8435BD9721FD8DB500DD0BB9 /* MASViewAttribute.m in Sources */,
 				8427A64521F96D2000A90DCF /* FiftyMainView.m in Sources */,
 				840CF58721F891080036E0C2 /* IQNSArray+Sort.m in Sources */,

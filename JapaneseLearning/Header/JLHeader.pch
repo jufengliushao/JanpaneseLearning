@@ -12,6 +12,8 @@
 #import "PropertySetting.h" // 基本属性
 
 #import "SFFileManager.h" // 文件读写
+#import "QuestDataManager.h" // 问题数据返回
+
 #import "Masonry.h"
 #import "EnumHeader.h"
 
