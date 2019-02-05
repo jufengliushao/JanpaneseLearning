@@ -79,6 +79,8 @@
 		8464759D21FD832900A305C3 /* FiftyStudyMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464759C21FD832900A305C3 /* FiftyStudyMainView.xib */; };
 		846475A221FD84CA00A305C3 /* FiftyStudyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 846475A021FD84CA00A305C3 /* FiftyStudyCollectionViewCell.m */; };
 		846475A321FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846475A121FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib */; };
+		849F3BAB2208375400E791A3 /* FiftyTestInputCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F3BA92208375400E791A3 /* FiftyTestInputCollectionViewCell.m */; };
+		849F3BAC2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +244,9 @@
 		8464759F21FD84CA00A305C3 /* FiftyStudyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyStudyCollectionViewCell.h; sourceTree = "<group>"; };
 		846475A021FD84CA00A305C3 /* FiftyStudyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyStudyCollectionViewCell.m; sourceTree = "<group>"; };
 		846475A121FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyStudyCollectionViewCell.xib; sourceTree = "<group>"; };
+		849F3BA82208375400E791A3 /* FiftyTestInputCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyTestInputCollectionViewCell.h; sourceTree = "<group>"; };
+		849F3BA92208375400E791A3 /* FiftyTestInputCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyTestInputCollectionViewCell.m; sourceTree = "<group>"; };
+		849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestInputCollectionViewCell.xib; sourceTree = "<group>"; };
 		84F1A4E62201CB7100639394 /* EnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -705,6 +710,9 @@
 				841D36662201D3620055079E /* FiftyTestPianBtnCollectionViewCell.h */,
 				841D36672201D3620055079E /* FiftyTestPianBtnCollectionViewCell.m */,
 				841D36682201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib */,
+				849F3BA82208375400E791A3 /* FiftyTestInputCollectionViewCell.h */,
+				849F3BA92208375400E791A3 /* FiftyTestInputCollectionViewCell.m */,
+				849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -827,6 +835,7 @@
 				840CF51221F88AE40036E0C2 /* Main.storyboard in Resources */,
 				8427A64721F96D2B00A90DCF /* FiftyMainView.xib in Resources */,
 				8464756F21FD780500A305C3 /* FiftyStudyViewController.xib in Resources */,
+				849F3BAC2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib in Resources */,
 				8427A64221F8BAE800A90DCF /* Language.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,6 +887,7 @@
 				840CF59321F891740036E0C2 /* UIView+SFView.m in Sources */,
 				8464756E21FD780500A305C3 /* FiftyStudyViewController.m in Sources */,
 				840CF51A21F88AE70036E0C2 /* main.m in Sources */,
+				849F3BAB2208375400E791A3 /* FiftyTestInputCollectionViewCell.m in Sources */,
 				8464759521FD7DB900A305C3 /* FiftyModel.m in Sources */,
 				840CF58221F891080036E0C2 /* IQBarButtonItem.m in Sources */,
 				8464757221FD798A00A305C3 /* ReaderManager.m in Sources */,

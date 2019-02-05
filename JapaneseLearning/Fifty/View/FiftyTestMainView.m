@@ -7,7 +7,9 @@
 //
 
 #import "FiftyTestMainView.h"
+
 #import "FiftyTestPianBtnCollectionViewCell.h"
+#import "FiftyTestInputCollectionViewCell.h"
 @interface FiftyTestMainView()<UICollectionViewDelegate, UICollectionViewDataSource>{
     NSArray *_datas;
     NSArray *_types;
@@ -43,6 +45,10 @@
                                         [UINib nibWithNibName:@"FiftyTestPianBtnCollectionViewCell"
                                                                     bundle:
                                                                     [NSBundle mainBundle]] forCellWithReuseIdentifier:FiftyTestPianBtnCollectionViewCellID];
+    [self.mainCV registerNib:
+                                        [UINib nibWithNibName:@"FiftyTestInputCollectionViewCell"
+                                                                    bundle:
+                                                                    [NSBundle mainBundle]] forCellWithReuseIdentifier:FiftyTestInputCollectionViewCellID];
 }
 
 - (void)configureDatas:(NSArray *)datas types:(NSArray *)types{
@@ -54,24 +60,41 @@
 - (void)buttonAction:(NSUInteger)tag{
     if (tag == RIGHT_ANSWER_TAG) {
         // right
-        _currentItem ++;
-        if (_currentItem >= _datas.count) {
-            // complete
-            if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testComplete)]) {
-                [self.delegate testDelegate_testComplete];
-            }
-            return;
-        }
-        if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testRight)]) {
-            [self.delegate testDelegate_testRight];
-        }
-        NSIndexPath *indexP = [NSIndexPath indexPathForRow:_currentItem inSection:0];
-        [self.mainCV scrollToItemAtIndexPath:indexP atScrollPosition:(UICollectionViewScrollPositionRight) animated:true];
+        [self rightDelegate];
     }else{
         // wrong
-        if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testWrong)]) {
-            [self.delegate testDelegate_testWrong];
+        [self wrongDelegate];
+    }
+}
+
+- (void)romaConfirmAction:(NSDictionary *)dic inputText:(NSString *)str{
+    if ([[dic[RIGHT_DATA_KEY] roma] isEqualToString:str]) {
+        // right
+        [self rightDelegate];
+    }else{
+        [self wrongDelegate];
+    }
+}
+
+- (void)rightDelegate{
+    _currentItem ++;
+    if (_currentItem >= _datas.count) {
+        // complete
+        if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testComplete)]) {
+            [self.delegate testDelegate_testComplete];
         }
+        return;
+    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testRight)]) {
+        [self.delegate testDelegate_testRight];
+    }
+    NSIndexPath *indexP = [NSIndexPath indexPathForRow:_currentItem inSection:0];
+    [self.mainCV scrollToItemAtIndexPath:indexP atScrollPosition:(UICollectionViewScrollPositionRight) animated:true];
+}
+
+- (void)wrongDelegate{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegate_testWrong)]) {
+        [self.delegate testDelegate_testWrong];
     }
 }
 #pragma mark - UICollectionViewDataSource
@@ -84,22 +107,33 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    FiftyTestPianBtnCollectionViewCell *cell = [collectionView
-                                    dequeueReusableCellWithReuseIdentifier:FiftyTestPianBtnCollectionViewCellID
-                                          forIndexPath:indexPath];
-    [cell configureModel:_datas[indexPath.item] type:[_types[indexPath.item] integerValue]];
     WS(ws);
-    [cell.firstBtn addTargetAction:^(UIButton *sender) {
-        [ws buttonAction:sender.tag];
-    }];
-    [cell.secondBtn addTargetAction:^(UIButton *sender) {
-        [ws buttonAction:sender.tag];
-    }];
-    [cell.thirdBtn addTargetAction:^(UIButton *sender) {
-        [ws buttonAction:sender.tag];
-    }];
-    [cell.forthBtn addTargetAction:^(UIButton *sender) {
-        [ws buttonAction:sender.tag];
+    QUESTIONTYPE type = [_types[indexPath.item] integerValue];
+    __block NSDictionary *dic = _datas[indexPath.item];
+    if (type == QUESTIONTYPE_PIAN_RANDOM || type == QUESTIONTYPE_PING_RANDOM) {
+        FiftyTestPianBtnCollectionViewCell *cell = [collectionView
+                                                    dequeueReusableCellWithReuseIdentifier:FiftyTestPianBtnCollectionViewCellID
+                                                    forIndexPath:indexPath];
+        [cell configureModel:dic type:[_types[indexPath.item] integerValue]];
+        [cell.firstBtn addTargetAction:^(UIButton *sender) {
+            [ws buttonAction:sender.tag];
+        }];
+        [cell.secondBtn addTargetAction:^(UIButton *sender) {
+            [ws buttonAction:sender.tag];
+        }];
+        [cell.thirdBtn addTargetAction:^(UIButton *sender) {
+            [ws buttonAction:sender.tag];
+        }];
+        [cell.forthBtn addTargetAction:^(UIButton *sender) {
+            [ws buttonAction:sender.tag];
+        }];
+        return cell;
+    }
+    FiftyTestInputCollectionViewCell *cell = [collectionView
+                                                        dequeueReusableCellWithReuseIdentifier:FiftyTestInputCollectionViewCellID forIndexPath:indexPath];
+    [cell configureModel:_datas[indexPath.item] type:[_types[indexPath.item] integerValue]];
+    [cell.confirmBtn addTargetAction:^(UIButton *sender) {
+        [ws romaConfirmAction:dic inputText:cell.inputTF.text];
     }];
     return cell;
 }

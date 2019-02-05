@@ -37,7 +37,7 @@
 - (void)dataSetting{
     NSMutableArray *types = [NSMutableArray arrayWithCapacity:0];
     for (int i = 0; i < 100; i ++) {
-        int value = arc4random() % 2;
+        int value = arc4random() % ENUM_TOTAL_NUMBER;
         [types addObject:@(value)];
     }
     NSMutableArray *datas = [NSMutableArray arrayWithCapacity:0];

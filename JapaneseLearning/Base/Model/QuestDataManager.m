@@ -52,6 +52,12 @@ QuestDataManager *questDataM = nil;
         }
             break;
             
+        case QUESTIONTYPE_ROMA_INPUT_SIGNAL:{
+            // 罗马音单个数据
+            result = [self private_getRomaSignal];
+        }
+            break;
+            
         default:
             break;
     }
@@ -75,6 +81,20 @@ QuestDataManager *questDataM = nil;
     NSDictionary *dic = @{
                           RIGHT_DATA_KEY : right,
                           QUESTION_DATA_KEY : result
+                          };
+    return dic;
+}
+
+/**
+ * 获取单个roma
+ */
+- (NSDictionary *)private_getRomaSignal{
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:_fiftyAllDatas];
+    int value = arc4random() % arr.count;
+    FiftyModel *right = arr[value];
+    NSDictionary *dic = @{
+                          RIGHT_DATA_KEY : right,
+                          QUESTION_DATA_KEY : @""
                           };
     return dic;
 }
