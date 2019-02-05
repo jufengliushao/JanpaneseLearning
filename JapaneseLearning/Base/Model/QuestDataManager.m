@@ -52,6 +52,12 @@ QuestDataManager *questDataM = nil;
         }
             break;
             
+        case QUESTIONTYPE_ROMA_RANDOM:{
+            // roma数据
+            result = [self private_getPianQuestData];
+        }
+            break;
+            
         case QUESTIONTYPE_ROMA_INPUT_SIGNAL:{
             // 罗马音单个数据
             result = [self private_getRomaSignal];

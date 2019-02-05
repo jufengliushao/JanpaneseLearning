@@ -32,9 +32,12 @@
     if (type == QUESTIONTYPE_PIAN_RANDOM) {
         // 平假名
         [self setDataPian];
-    }else{
+    }else if(type == QUESTIONTYPE_PING_RANDOM){
         // 平假名
         [self setDataPing];
+    }else{
+        // roma
+        [self setDataRoma];
     }
 }
 
@@ -70,5 +73,16 @@
     int value = arc4random() % 2;
     self.targetLabel.text = value == 0  ? _rightData.roma : _rightData.pian;
     self.markLabel.text = QUESTION_MSG_PING_TM;
+}
+
+- (void)setDataRoma{
+    for (NSInteger i = 0; i < _questData.count; i ++) {
+        UIButton *btn = _btnArr[i];
+        FiftyModel *model = _questData[i];
+        [btn setTitle:model.roma  forState:(UIControlStateNormal)];
+    }
+    int value = arc4random() % 2;
+    self.targetLabel.text = value == 0  ? _rightData.ping : _rightData.pian;
+    self.markLabel.text = QUESTION_MSG_ROMA_TM;
 }
 @end

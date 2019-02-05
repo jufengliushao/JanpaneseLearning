@@ -110,7 +110,7 @@
     WS(ws);
     QUESTIONTYPE type = [_types[indexPath.item] integerValue];
     __block NSDictionary *dic = _datas[indexPath.item];
-    if (type == QUESTIONTYPE_PIAN_RANDOM || type == QUESTIONTYPE_PING_RANDOM) {
+    if (type == QUESTIONTYPE_PIAN_RANDOM || type == QUESTIONTYPE_PING_RANDOM || type == QUESTIONTYPE_ROMA_RANDOM) {
         FiftyTestPianBtnCollectionViewCell *cell = [collectionView
                                                     dequeueReusableCellWithReuseIdentifier:FiftyTestPianBtnCollectionViewCellID
                                                     forIndexPath:indexPath];

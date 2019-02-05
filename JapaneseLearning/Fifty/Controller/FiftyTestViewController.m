@@ -40,6 +40,7 @@
         int value = arc4random() % ENUM_TOTAL_NUMBER;
         [types addObject:@(value)];
     }
+    [types insertObject:@(QUESTIONTYPE_ROMA_RANDOM) atIndex:0];
     NSMutableArray *datas = [NSMutableArray arrayWithCapacity:0];
     for (NSInteger i = 0; i < types.count; i ++) {
         [datas addObject:[[QuestDataManager shareInstance] questData_getDataWithType:[types[i] integerValue]]];
