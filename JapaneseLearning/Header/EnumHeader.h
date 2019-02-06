@@ -13,7 +13,8 @@ typedef NS_ENUM(NSInteger, QUESTIONTYPE) {
     QUESTIONTYPE_PING_RANDOM, // 平假名随机按钮
     QUESTIONTYPE_ROMA_RANDOM, // roma随机按钮
     QUESTIONTYPE_ROMA_INPUT_SIGNAL, // roma-input-单个
+    QUESTIONTYPE_ROMA_INPUT_MANY, // roma-input-多个
 };
 
-#define ENUM_TOTAL_NUMBER 4
+#define ENUM_TOTAL_NUMBER 5
 #endif /* EnumHeader_h */

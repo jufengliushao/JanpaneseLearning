@@ -64,6 +64,12 @@ QuestDataManager *questDataM = nil;
         }
             break;
             
+        case QUESTIONTYPE_ROMA_INPUT_MANY:{
+            // 罗马音多个数据
+            result = [self private_getRomaMany];
+        }
+            break;
+            
         default:
             break;
     }
@@ -100,6 +106,31 @@ QuestDataManager *questDataM = nil;
     FiftyModel *right = arr[value];
     NSDictionary *dic = @{
                           RIGHT_DATA_KEY : right,
+                          QUESTION_DATA_KEY : @""
+                          };
+    return dic;
+}
+
+/**
+ * 获取多个roma
+ */
+- (NSDictionary *)private_getRomaMany{
+    int value = arc4random() % 5;
+    value = value < 2 ? 2 : value;
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:_fiftyAllDatas];
+    FiftyModel *target = [[FiftyModel alloc] init];
+    target.ping = @"";
+    target.roma = @"";
+    for (int index = 0; index < value; index ++) {
+         int ind = arc4random() % arr.count;
+        FiftyModel *tmp = arr[ind];
+        int p = arc4random() % 2;
+        target.ping = [NSString stringWithFormat:@"%@%@", target.ping, p == 0  ? tmp.ping : tmp.pian];
+        target.roma = [NSString stringWithFormat:@"%@%@", target.roma, tmp.roma];
+        [arr removeObjectAtIndex:ind];
+    }
+    NSDictionary *dic = @{
+                          RIGHT_DATA_KEY : target,
                           QUESTION_DATA_KEY : @""
                           };
     return dic;

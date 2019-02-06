@@ -28,6 +28,10 @@
         int value = arc4random() % 2;
         self.targetLabel.text = value == 0  ? _rightData.ping : _rightData.pian;
         self.inputTF.text = @"";
+    }else{
+        // 多个roma
+        self.targetLabel.text = _rightData.ping;
+        self.inputTF.text = @"";
     }
 }
 @end
