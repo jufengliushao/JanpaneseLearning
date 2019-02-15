@@ -83,6 +83,8 @@
 		849F3BAC2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */; };
 		84AA37C022171A5F00959B50 /* WordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA37BE22171A5F00959B50 /* WordsMainViewController.m */; };
 		84AA37C122171A5F00959B50 /* WordsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AA37BF22171A5F00959B50 /* WordsMainViewController.xib */; };
+		84AA37C422171B2F00959B50 /* WordsTestMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA37C322171B2F00959B50 /* WordsTestMainView.m */; };
+		84AA37C622171B3900959B50 /* WordsTestMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AA37C522171B3900959B50 /* WordsTestMainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +254,9 @@
 		84AA37BD22171A5F00959B50 /* WordsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsMainViewController.h; sourceTree = "<group>"; };
 		84AA37BE22171A5F00959B50 /* WordsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsMainViewController.m; sourceTree = "<group>"; };
 		84AA37BF22171A5F00959B50 /* WordsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsMainViewController.xib; sourceTree = "<group>"; };
+		84AA37C222171B2F00959B50 /* WordsTestMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsTestMainView.h; sourceTree = "<group>"; };
+		84AA37C322171B2F00959B50 /* WordsTestMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsTestMainView.m; sourceTree = "<group>"; };
+		84AA37C522171B3900959B50 /* WordsTestMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsTestMainView.xib; sourceTree = "<group>"; };
 		84F1A4E62201CB7100639394 /* EnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -753,6 +758,9 @@
 		84AA37BC22171A4500959B50 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84AA37C222171B2F00959B50 /* WordsTestMainView.h */,
+				84AA37C322171B2F00959B50 /* WordsTestMainView.m */,
+				84AA37C522171B3900959B50 /* WordsTestMainView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -865,6 +873,7 @@
 				840CF51721F88AE70036E0C2 /* LaunchScreen.storyboard in Resources */,
 				840CF54F21F88D0D0036E0C2 /* MainUIView.xib in Resources */,
 				846475A321FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib in Resources */,
+				84AA37C622171B3900959B50 /* WordsTestMainView.xib in Resources */,
 				840CF5AB21F89BF10036E0C2 /* back.png in Resources */,
 				8464759D21FD832900A305C3 /* FiftyStudyMainView.xib in Resources */,
 				841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */,
@@ -914,6 +923,7 @@
 				8435BD9221FD8DB500DD0BB9 /* MASLayoutConstraint.m in Sources */,
 				840CF58321F891080036E0C2 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				840CF58021F891080036E0C2 /* IQToolbar.m in Sources */,
+				84AA37C422171B2F00959B50 /* WordsTestMainView.m in Sources */,
 				8435BD9121FD8DB500DD0BB9 /* MASConstraintMaker.m in Sources */,
 				8435BD9621FD8DB500DD0BB9 /* MASViewConstraint.m in Sources */,
 				840CF5A121F8988C0036E0C2 /* FIftyMainViewController.m in Sources */,

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WordsTestMainView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lW-CP-sgc">
+                    <rect key="frame" x="43" y="140.5" width="289" height="43.5"/>
+                    <color key="backgroundColor" red="0.20381457820000001" green="0.6302758812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6lW-CP-sgc" secondAttribute="height" multiplier="199:30" id="Bge-5r-1M2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="学习">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-IA-6Yi">
+                    <rect key="frame" x="43" y="243.5" width="289" height="44"/>
+                    <color key="backgroundColor" red="0.20381457820000001" green="0.6302758812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zbk-IA-6Yi" secondAttribute="height" multiplier="199:30" id="D7d-or-ouG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="自测">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zbk-IA-6Yi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bqo-za-rXG"/>
+                <constraint firstItem="Zbk-IA-6Yi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.9" id="Jiy-v1-whW"/>
+                <constraint firstItem="6lW-CP-sgc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.77" id="NmL-v1-kKS"/>
+                <constraint firstItem="6lW-CP-sgc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="Ord-Du-3CE"/>
+                <constraint firstItem="6lW-CP-sgc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rr6-27-2WY"/>
+                <constraint firstItem="Zbk-IA-6Yi" firstAttribute="width" secondItem="6lW-CP-sgc" secondAttribute="width" id="hZf-fA-cq4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="studyBtn" destination="6lW-CP-sgc" id="oil-jq-Pcf"/>
+                <outlet property="testBtn" destination="Zbk-IA-6Yi" id="UFm-3F-ajx"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="288.75562218890559"/>
+        </view>
+    </objects>
+</document>
