@@ -81,6 +81,8 @@
 		846475A321FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846475A121FD84CA00A305C3 /* FiftyStudyCollectionViewCell.xib */; };
 		849F3BAB2208375400E791A3 /* FiftyTestInputCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F3BA92208375400E791A3 /* FiftyTestInputCollectionViewCell.m */; };
 		849F3BAC2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */; };
+		84AA37C022171A5F00959B50 /* WordsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AA37BE22171A5F00959B50 /* WordsMainViewController.m */; };
+		84AA37C122171A5F00959B50 /* WordsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AA37BF22171A5F00959B50 /* WordsMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +249,9 @@
 		849F3BA82208375400E791A3 /* FiftyTestInputCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiftyTestInputCollectionViewCell.h; sourceTree = "<group>"; };
 		849F3BA92208375400E791A3 /* FiftyTestInputCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyTestInputCollectionViewCell.m; sourceTree = "<group>"; };
 		849F3BAA2208375400E791A3 /* FiftyTestInputCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiftyTestInputCollectionViewCell.xib; sourceTree = "<group>"; };
+		84AA37BD22171A5F00959B50 /* WordsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordsMainViewController.h; sourceTree = "<group>"; };
+		84AA37BE22171A5F00959B50 /* WordsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordsMainViewController.m; sourceTree = "<group>"; };
+		84AA37BF22171A5F00959B50 /* WordsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsMainViewController.xib; sourceTree = "<group>"; };
 		84F1A4E62201CB7100639394 /* EnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -303,6 +308,7 @@
 				840CF50D21F88AE40036E0C2 /* ViewController.h */,
 				840CF50E21F88AE40036E0C2 /* ViewController.m */,
 				840CF51021F88AE40036E0C2 /* Main.storyboard */,
+				84AA37B922171A4500959B50 /* Words */,
 				840CF5A821F89BF00036E0C2 /* Resources */,
 				840CF59421F8924E0036E0C2 /* Main */,
 				840CF55521F88E890036E0C2 /* Header */,
@@ -717,6 +723,40 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		84AA37B922171A4500959B50 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				84AA37BA22171A4500959B50 /* Controller */,
+				84AA37BB22171A4500959B50 /* Model */,
+				84AA37BC22171A4500959B50 /* View */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+		84AA37BA22171A4500959B50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84AA37BD22171A5F00959B50 /* WordsMainViewController.h */,
+				84AA37BE22171A5F00959B50 /* WordsMainViewController.m */,
+				84AA37BF22171A5F00959B50 /* WordsMainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84AA37BB22171A4500959B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84AA37BC22171A4500959B50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -829,6 +869,7 @@
 				8464759D21FD832900A305C3 /* FiftyStudyMainView.xib in Resources */,
 				841D366A2201D3620055079E /* FiftyTestPianBtnCollectionViewCell.xib in Resources */,
 				841D3673220295210055079E /* FiftyTestMainView.xib in Resources */,
+				84AA37C122171A5F00959B50 /* WordsMainViewController.xib in Resources */,
 				841D36652201D2200055079E /* FiftyTestViewController.xib in Resources */,
 				840CF51421F88AE70036E0C2 /* Assets.xcassets in Resources */,
 				840CF5A221F8988C0036E0C2 /* FIftyMainViewController.xib in Resources */,
@@ -892,6 +933,7 @@
 				840CF58221F891080036E0C2 /* IQBarButtonItem.m in Sources */,
 				8464757221FD798A00A305C3 /* ReaderManager.m in Sources */,
 				840CF59D21F8958D0036E0C2 /* BaseView.m in Sources */,
+				84AA37C022171A5F00959B50 /* WordsMainViewController.m in Sources */,
 				8464758C21FD7D9700A305C3 /* JSONModel.m in Sources */,
 				8464759121FD7D9700A305C3 /* JSONAPI.m in Sources */,
 				840CF59A21F892640036E0C2 /* MainViewController.m in Sources */,

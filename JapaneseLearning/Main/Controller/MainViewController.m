@@ -11,6 +11,7 @@
 #import "MainUIView.h"
 
 #import "FIftyMainViewController.h"
+#import "WordsMainViewController.h"
 @interface MainViewController()
 @property (nonatomic, strong) MainUIView *mainView;
 @end
@@ -50,7 +51,10 @@
 }
 
 - (void)skip_wordsVC{
-    
+    WordsMainViewController *vc = [[WordsMainViewController alloc]
+                                                                        initWithNibName:@"WordsMainViewController"
+                                                                                        bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 懒加载
