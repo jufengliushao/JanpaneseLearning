@@ -34,6 +34,11 @@
         // 50音图
         [ws skip_fiftyVC];
     }];
+    
+    [self.mainView.wordsBtn addTargetAction:^(UIButton *sender) {
+        // 单词练习
+        [ws skip_wordsVC];
+    }];
 }
 
 #pragma mark - view skip
@@ -42,6 +47,10 @@
                                                                         initWithNibName:@"FIftyMainViewController"
                                                                                          bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)skip_wordsVC{
+    
 }
 
 #pragma mark - 懒加载

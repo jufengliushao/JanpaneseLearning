@@ -21,6 +21,9 @@
     [super awakeFromNib];
     self.fiftyBtn.layer.cornerRadius = 5;
     self.fiftyBtn.layer.masksToBounds = true;
+    
+    self.wordsBtn.layer.cornerRadius = 5;
+    self.wordsBtn.layer.masksToBounds = true;
 }
 
 

@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainUIView : BaseView
 @property (weak, nonatomic) IBOutlet UIButton *fiftyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *wordsBtn;
+
+
 + (MainUIView *)initForNib;
 @end
 

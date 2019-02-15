@@ -26,9 +26,23 @@
                         <color key="titleColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-zf-bvt">
+                    <rect key="frame" x="45" y="194.5" width="285" height="50"/>
+                    <color key="backgroundColor" red="0.20381457820000001" green="0.6302758812" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pvW-zf-bvt" secondAttribute="height" multiplier="375:66" id="W3k-4X-0Hy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="单词练习">
+                        <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="pvW-zf-bvt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.88" id="ExX-yQ-eoi"/>
+                <constraint firstItem="pvW-zf-bvt" firstAttribute="centerX" secondItem="7rl-Zz-PDT" secondAttribute="centerX" id="Klr-8R-hN9"/>
+                <constraint firstItem="pvW-zf-bvt" firstAttribute="width" secondItem="7rl-Zz-PDT" secondAttribute="width" id="SHc-Jd-4n8"/>
                 <constraint firstItem="7rl-Zz-PDT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.55" id="SuP-Zr-AdW"/>
                 <constraint firstItem="7rl-Zz-PDT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XKg-xy-TSy"/>
                 <constraint firstItem="7rl-Zz-PDT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.76" id="bGg-Xm-XMJ"/>
@@ -36,6 +50,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="fiftyBtn" destination="7rl-Zz-PDT" id="rvZ-l5-7QS"/>
+                <outlet property="wordsBtn" destination="pvW-zf-bvt" id="ipR-vs-pGm"/>
             </connections>
             <point key="canvasLocation" x="77.599999999999994" y="193.85307346326837"/>
         </view>
